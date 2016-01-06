@@ -1,0 +1,4 @@
+from subprocess import call
+for i in range(1,53):
+	cmmd = "mux4_obf c7552-abcmap-fmt.v " + str(i)
+	call(cmmd, shell = True)

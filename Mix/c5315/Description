@@ -1,0 +1,7 @@
+What: simp incremental solver w forbidden bits
+Usage: 
+	MUX2 
+	./minisat-incre decam-incre Orac.v Cam.v  -f=11
+	MUX4
+	./minisat-incre decam-incre Orac.v Cam.v 
+Correctness: not verified
