@@ -111,7 +111,7 @@ def re_find_gateType(gate):
 
 def input_modifier(input):
     input_info = input.replace("\n","").replace("input","")
-    input_info = "\ninput CONST1,CONST0," + input_info
+    input_info = "\ninput " + input_info + ",CONST1,CONST0"
     return  input_info
 # used to modify current PI to add CONST1 and CONST0
 

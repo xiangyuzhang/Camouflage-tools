@@ -10,17 +10,17 @@ output N10,N11;
 
 wire N6,N7,N8,N9,D_0_NOT,D_1_NOT,MUX_O_0,ED_0,ED_1,ED_2,ED_3,ED_4,ED_5,ED_6,ED_7,ED_8,ED_9;
      
-nand2 gate1( .a(N1), .b(N3), O(N6) );
-nand2 gate2( .a(N3), .b(N4), O(N8) );
-nand2 gate3( .a(N2), .b(N8), O(N7) );
-nand2 gate4( .a(N8), .b(N5), O(N9) );
-nand2 gate5( .a(MUX_O_0), .b(N7), O(N10) );
-nand2 gate6( .a(N7), .b(N9), O(N11) );
+nand2 gate1( .a(N1), .b(N3), .O(N6) );
+nand2 gate2( .a(N3), .b(N4), .O(N8) );
+nand2 gate3( .a(N2), .b(N8), .O(N7) );
+nand2 gate4( .a(N8), .b(N5), .O(N9) );
+nand2 gate5( .a(MUX_O_0), .b(N7), .O(N10) );
+nand2 gate6( .a(N7), .b(N9), .O(N11) );
 inv1 gate( .a(D_0),.O(D_0_NOT) );
 inv1 gate( .a(D_1),.O(D_1_NOT) );
-and2 gate( .a(N6), .b(D_0_NOT), .O(ED_0) );
-and2 gate( .a(N9), .b(D_0_NOT), .O(ED_1) );
-and2 gate( .a(N7), .b(D_0), .O(ED_2) );
+and2 gate( .a(N1), .b(D_0_NOT), .O(ED_0) );
+and2 gate( .a(N5), .b(D_0_NOT), .O(ED_1) );
+and2 gate( .a(N4), .b(D_0), .O(ED_2) );
 and2 gate( .a(N6), .b(D_0), .O(ED_3) );
 and2 gate( .a(ED_0), .b(D_1_NOT), .O(ED_9) );
 and2 gate( .a(ED_1), .b(D_1), .O(ED_7) );
