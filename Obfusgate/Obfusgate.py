@@ -156,7 +156,9 @@ for candidate_index in candidate_index_list:
 
             for index in range(0, len(Vlines)):
                 if gate_list[candidate_index -1 ] in Vlines[index]:
-                    Vlines[index] = Vlines[index].replace(info[3].strip("_OBF"), info[3])
+                    old = "(" + info[3].strip("_OBF") + ")"
+                    new = "(" + info[3] + ")"
+                    Vlines[index] = Vlines[index].replace(old, new)
                     break
             seed+=10
             programbit+=2
