@@ -47,19 +47,37 @@ def abcmap_MUX_OBF_netlist(pi1, output, seed, programbit):
 # program bit is the initial index for CBs
 # return [new_netlist, wire, CB, output]  output is also included in wire
 
+def input_modifier(input):
+    input_info = input.replace("\n","").replace("input","")
+    input_info = "\ninput " + input_info + ",CONST1,CONST0"
+    return  input_info
+# used to modify current PI to add CONST1 and CONST0
+
+def netname_finder(gate):
+    return_list = []
+    reg = r'(\(\w*\))'
+    temp_list = re.findall(reg,gate)
+    for i in temp_list:
+        if  '(' in i or ')' in i:
+            return_list.append(i.strip('(').strip(')'))
+    return return_list
+# return ['input1', 'input2', 'input3', 'output']
+
 def gate_finder(Vlines):
     for index in range(0,len(Vlines)):
         if "gate" in Vlines[index]:
             start = index
             break
     Vlines = Vlines[start:-1]
+    for index in range(0, len(Vlines)):
+        Vlines[index] = Vlines[index].replace("\n","").replace("\t","")
     return Vlines
 # return PURE gate list, will be selected from random sequence
 
 def find_NAND_AND(Vlines, candidate_counter):
     candidate_index_list = []
     for index in range(0, len(Vlines)):
-        if "and2 " in Vlines[index]  or "nand4 " in Vlines[index]:
+        if "and2 " in Vlines[index] or "nand4 " in Vlines[index]:
             candidate_counter += 1
             candidate_index_list.append(index)
     return candidate_index_list
@@ -83,9 +101,21 @@ def random_sequence_generator(limit_num, select_range):
 # select_range is the range of int can be selected
 # return list; random_sequence[1,23,55, ...]
 
-def camouflage_builder(gate, seed, programbit,):
+def camouflage_builder(gate, seed, programbit):
+    res = {"new_netlist":[], "CB":[], "wire":[]}
+    netname_list = netname_finder(gate)
+    for net in netname_list:
+        info = abcmap_MUX_OBF_netlist(net,net + "_OBF", seed, programbit)
+        res["new_netlist"].append(info[0])
+        res["CB"].append(info[2])
+        res["wire"].append(info[1])
+        seed += 9
+        programbit += 2
 
-# used to
+
+
+
+
 
 #########################################################################################
 seed = 0
@@ -116,7 +146,7 @@ if not os.path.isfile(CircuitPath):
     print 'Invalid input circuit file!!!\n'
 
 # count the number of nand4 and and2, and also return the index
-Vlines = gate_finder(Vlines)
+gate_list = gate_finder(Vlines)
 candidate_index_list = find_NAND_AND(Vlines, candidate_counter)
 
 # generate random sequence respect to the length of candidate_index_list
@@ -125,4 +155,53 @@ random_sequence = random_sequence_generator(Num_pair, len(candidate_index_list))
 # build obfusgates
 for i in random_sequence:
     candidate_index = candidate_index_list[i]
-    gate = Vlines[candidate_index]
+    gate = gate_list[candidate_index]
+    if "and2 " in gate:
+        info = camouflage_builder(gate, seed, programbit)
+        new_netlist.append(info["new_netlist"])
+        new_wires.append(info["wire"])
+        new_CB.append(info["CB"])
+        seed+=18
+        programbit+=4
+    elif "nand4 " in gate:
+        info = camouflage_builder(gate,seed, programbit)
+        new_netlist.append(info["new_netlist"])
+        new_wires.append(info["wire"])
+        new_CB.append(info["CB"])
+        seed+=45
+        programbit+=10
+    for index in range(0, len(Vlines)):
+        if gate in Vlines[index]:
+            old = "(" + info[3].strip("_OBF") + ")"
+            new = "(" + info[3] + ")"
+            Vlines[index] = Vlines[index].replace(old, new)
+            break
+
+# modify wire
+new_wires_string = (",").join(new_wires)
+for index in range(0, len(Vlines)):
+    if "wire" in Vlines[index]:
+        Vlines[index] = Vlines[index] + "," + new_wires_string
+        break
+# add new input: CB
+new_CB_string = (",").join(new_CB)
+for index in range(0, len(Vlines)):
+    if "input" in Vlines[index]:
+        Vlines[index] = input_modifier(Vlines[index])
+        Vlines[index] += " //RE__PI"
+        Vlines.insert(index + 1, "\ninput " + new_CB_string + " //RE__ALLOW(00,01,10,11)")
+        break
+# add new netlist
+Vlines = Vlines[0:-1]
+for element in new_netlist:
+    Vlines.append(element)
+
+# append "\nendmodule\n"
+Vlines.append("\nendmodule\n")
+
+
+output = circuitIn.strip(".v") + "-OBF-" + str(Num_pair) + ".v"
+Final_result = (";\n").join(Vlines)
+with open(output,'w') as outfile:
+    outfile.write(Final_result)
+
