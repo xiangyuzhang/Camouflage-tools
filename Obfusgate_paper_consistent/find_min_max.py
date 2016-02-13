@@ -1,4 +1,4 @@
 __author__ = 'xiangyuzhang'
-data = "atime_info_WIRE"
-with open(data, "r") as infile:
-    data = infile.read().split("\n")
+import re
+str = "nand2 gate65( .a(N213), .b(N76), .O(N257) );"
+print(re.search("^nand2",str).group())
