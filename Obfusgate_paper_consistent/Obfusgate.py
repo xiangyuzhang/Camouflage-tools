@@ -28,7 +28,7 @@ def abcmap_MUX_OBF_netlist(pi1, output, seed, programbit):
     new_netlist.append("and2 gate( .a(" + "ED_" + str(seed + 3) + "), .b(" + D_bit2 + "), .O(" + "ED_" + str(seed + 4) + ") );\n")
     new_netlist.append("or2  gate( .a(" +  "ED_" + str(seed + 4) + "), .b(" + "ED_" + str(seed + 5) +"), .O(" + "ED_" + str(seed + 6) +") );\n")
     new_netlist.append("or2  gate( .a(" +  "ED_" + str(seed + 6) + "), .b(" + "ED_" + str(seed + 7) +"), .O(" + "ED_" + str(seed + 8) +") );\n")
-    new_netlist.append("or2  gate( .a(" +  "ED_" + str(seed + 9) + "), .b(" + "ED_" + str(seed + 8) +"), .O(" + str(output) +") )")
+    new_netlist.append("or2  gate( .a(" +  "ED_" + str(seed + 9) + "), .b(" + "ED_" + str(seed + 8) +"), .O(" + str(output) +")")
     new_netlist_str = ('').join(new_netlist)
     wire.append(D_bit1_not)
     wire.append(D_bit2_not)
@@ -36,8 +36,10 @@ def abcmap_MUX_OBF_netlist(pi1, output, seed, programbit):
     wire.append(output)
     for i in range(0,10):
         wire.append("ED_" + str(seed + i))
+    wire = ','.join(wire)
     CB.append(D_bit1)
     CB.append(D_bit2)
+    CB = ','.join(CB)
     result.append(new_netlist_str)
     result.append(wire)
     result.append(CB)
@@ -75,19 +77,21 @@ def gate_finder(Vlines):
 # return PURE gate list, will be selected from random sequence
 
 def find_NAND_AND(Vlines, candidate_counter):
+    res = {"index_list":[], "candidate_counter": 0}
     candidate_index_list = []
     for index in range(0, len(Vlines)):
-        if re.search("^nand4", Vlines[index]) == "nand4" or re.search("^and2", Vlines[index]) == "and2":
+        if len(re.findall("^nand4", Vlines[index])) != 0 or len(re.findall("^and2", Vlines[index])) != 0:
 #        if "and2 " in Vlines[index] or "nand4 " in Vlines[index]:
             candidate_counter += 1
-            candidate_index_list.append(index)
-    return candidate_index_list
+            res["index_list"].append(index)
+    res["candidate_counter"] = candidate_counter
+    return res
 # return the index of the line if this line contain and2 or nand4, the index is corresponding to Vlines w/ only gates
 # info
 
 def random_sequence_generator(limit_num, select_range):
 
-    random_counter = 1
+    random_counter = 0
     random.random()
     random.seed(1)
     random_sequence = []
@@ -103,15 +107,17 @@ def random_sequence_generator(limit_num, select_range):
 # return list; random_sequence[1,23,55, ...]
 
 def camouflage_builder(gate, seed, programbit):
-    res = {"new_netlist":[], "CB":[], "wire":[]}
+    res = {"new_netlist":[], "CB":[], "wire":[],"output":[]}
     netname_list = netname_finder(gate)
     for net in netname_list:
         info = abcmap_MUX_OBF_netlist(net,net + "_OBF", seed, programbit)
         res["new_netlist"].append(info[0])
         res["CB"].append(info[2])
         res["wire"].append(info[1])
+        res["output"].append(info[3])
         seed += 9
         programbit += 2
+    return res
 
 
 
@@ -148,7 +154,8 @@ if not os.path.isfile(CircuitPath):
 
 # count the number of nand4 and and2, and also return the index
 gate_list = gate_finder(Vlines)
-candidate_index_list = find_NAND_AND(Vlines, candidate_counter)
+candidate_index_list = find_NAND_AND(gate_list, candidate_counter)["index_list"]
+candidate_counter = find_NAND_AND(gate_list, candidate_counter)["candidate_counter"]
 if candidate_counter < Num_pair:
     print "Not enough AND2 and NAND4, quit\n"
 else:
@@ -159,26 +166,28 @@ else:
     for i in random_sequence:
         candidate_index = candidate_index_list[i]
         gate = gate_list[candidate_index]
+        info = camouflage_builder(gate, seed, programbit)
         if "and2 " in gate:
-            info = camouflage_builder(gate, seed, programbit)
-            new_netlist.append(info["new_netlist"])
-            new_wires.append(info["wire"])
-            new_CB.append(info["CB"])
+
+            new_netlist.append(("").join(info["new_netlist"]))
+            new_wires.append(("").join(info["wire"]))
+            new_CB.append(("").join(info["CB"]))
             seed+=18
             programbit+=4
         elif "nand4 " in gate:
-            info = camouflage_builder(gate,seed, programbit)
-            new_netlist.append(info["new_netlist"])
-            new_wires.append(info["wire"])
-            new_CB.append(info["CB"])
+
+            new_netlist.append(("").join(info["new_netlist"]))
+            new_wires.append(("").join(info["wire"]))
+            new_CB.append(("").join(info["CB"]))
             seed+=45
             programbit+=10
         for index in range(0, len(Vlines)):
             if gate in Vlines[index]:
-                old = "(" + info[3].strip("_OBF") + ")"
-                new = "(" + info[3] + ")"
-                Vlines[index] = Vlines[index].replace(old, new)
-                break
+                for output in info["output"]:
+                    old = "(" + output.strip("_OBF") + ")"
+                    new = "(" + output + ")"
+                    Vlines[index] = Vlines[index].replace(old, new)
+
 
     # modify wire
     new_wires_string = (",").join(new_wires)
