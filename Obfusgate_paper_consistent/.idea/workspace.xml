@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e84d347-746c-4d80-93c1-b47e3f6b975a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-1.v" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-10.v" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-2.v" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Solver/c7552-abcmap-fmt.v" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/c432-abcmap-fmt-OBF-1.v" afterPath="$PROJECT_DIR$/Solver/c432-abcmap-fmt.v" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/c7552-abcmap-fmt-OBF-1.v" afterPath="$PROJECT_DIR$/Solver/c7552-abcmap-fmt-OBF-1.v" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Obfusgate.py" afterPath="$PROJECT_DIR$/Obfusgate.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/find_min_max.py" afterPath="$PROJECT_DIR$/find_min_max.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Obfusgate_paper_consistent.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,58 +33,19 @@
       <file leaf-file-name="Obfusgate.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Obfusgate.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7560484">
-              <caret line="30" column="127" selection-start-line="30" selection-start-column="127" selection-end-line="30" selection-end-column="127" />
+            <state vertical-scroll-proportion="-0.1843318">
+              <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
               <folding>
                 <element signature="e#28#37#0" expanded="true" />
+                <element signature="e#153#2527#0" expanded="false" />
                 <element signature="e#2715#2853#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="c7552-abcmap-fmt-OBF-1.v" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/c7552-abcmap-fmt-OBF-1.v">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="3933" column="18" selection-start-line="3933" selection-start-column="18" selection-end-line="3933" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="c7552-abcmap-fmt.v" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/c7552-abcmap-fmt.v">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.612903">
-              <caret line="480" column="4" selection-start-line="480" selection-start-column="0" selection-end-line="480" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pydevd.py" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="1777" column="0" selection-start-line="1777" selection-start-column="0" selection-end-line="1777" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="find_min_max.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/find_min_max.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="c432-abcmap-fmt-OBF-1.v" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/c432-abcmap-fmt-OBF-1.v">
+      <file leaf-file-name="c432-abcmap-fmt-OBF-10.v" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/c432-abcmap-fmt-OBF-10.v">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -87,18 +54,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="c432-abcmap-fmt.v" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/c432-abcmap-fmt.v">
+      <file leaf-file-name="c432-abcmap-fmt-OBF-2.v" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-2.v">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="44" />
+            <state vertical-scroll-proportion="-12.0">
+              <caret line="188" column="32" selection-start-line="188" selection-start-column="32" selection-end-line="188" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README">
+      <file leaf-file-name="c432-abcmap-fmt-OBF-10.v" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-10.v">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="c432-abcmap-fmt-OBF-1.v" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/c432-abcmap-fmt-OBF-1.v">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -125,7 +102,10 @@
         <option value="$PROJECT_DIR$/c432-abcmap-fmt.v" />
         <option value="$PROJECT_DIR$/c7552-abcmap-fmt.v" />
         <option value="$PROJECT_DIR$/find_min_max.py" />
+        <option value="$PROJECT_DIR$/c7552-abcmap-fmt-OBF-1.v" />
+        <option value="$PROJECT_DIR$/c432-abcmap-fmt-OBF-10.v" />
         <option value="$PROJECT_DIR$/Obfusgate.py" />
+        <option value="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-2.v" />
       </list>
     </option>
   </component>
@@ -134,8 +114,8 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="873" />
+    <option name="width" value="1920" />
+    <option name="height" value="1173" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -160,8 +140,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -180,6 +160,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Obfusgate_paper_consistent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Obfusgate_paper_consistent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Solver" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -191,6 +185,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Solver" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -208,7 +203,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Obfusgate_paper_consistent" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Obfusgate.py" />
-      <option name="PARAMETERS" value="c7552-abcmap-fmt.v 1" />
+      <option name="PARAMETERS" value="c432-abcmap-fmt.v 2" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
@@ -376,26 +371,26 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="873" extended-state="6" />
+    <frame x="0" y="23" width="1920" height="1173" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32950193" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37387964" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32871652" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24947146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19483939" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37303784" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28480205" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3290653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32871652" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28480205" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
@@ -415,76 +410,78 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/Obfusgate.py</url>
-          <line>211</line>
+          <line>218</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/Obfusgate.py</url>
-          <line>214</line>
+          <line>221</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/Obfusgate.py</url>
-          <line>193</line>
+          <line>200</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/Obfusgate.py</url>
-          <line>199</line>
+          <line>206</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/Obfusgate.py</url>
-          <line>207</line>
+          <line>214</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/Obfusgate.py</url>
-          <line>174</line>
-          <option name="timeStamp" value="29" />
+          <line>103</line>
+          <option name="timeStamp" value="42" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/Obfusgate.py</url>
-          <line>181</line>
-          <option name="timeStamp" value="31" />
+          <line>186</line>
+          <option name="timeStamp" value="48" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/Obfusgate.py</url>
-          <line>171</line>
-          <option name="timeStamp" value="33" />
+          <line>187</line>
+          <option name="timeStamp" value="49" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/Obfusgate.py</url>
-          <line>178</line>
-          <option name="timeStamp" value="34" />
+          <line>188</line>
+          <option name="timeStamp" value="50" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/Obfusgate.py</url>
-          <line>169</line>
-          <option name="timeStamp" value="35" />
+          <line>166</line>
+          <option name="timeStamp" value="52" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/Obfusgate.py</url>
-          <line>168</line>
-          <option name="timeStamp" value="36" />
+          <line>185</line>
+          <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/Obfusgate.py</url>
-          <line>119</line>
-          <option name="timeStamp" value="39" />
+          <line>184</line>
+          <option name="timeStamp" value="56" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="40" />
+      <option name="time" value="57" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
-        <watch expression="new_wires_string" language="Python" />
-        <watch expression="random_sequence" language="Python" />
-        <watch expression="netname_list" language="Python" />
-        <watch expression="gate" language="Python" />
-        <watch expression="res" language="Python" />
-        <watch expression="info" language="Python" />
         <watch expression="new_netlist" language="Python" />
+        <watch expression="new_wires" language="Python" />
+        <watch expression="new_CB" language="Python" />
+        <watch expression="info[&quot;output&quot;]" language="Python" />
+        <watch expression="netname_finder(Vlines[index])" language="Python" />
+        <watch expression="Vlines[index]" language="Python" />
+        <watch expression="random_sequence" language="Python" />
+        <watch expression="gate" language="Python" />
+        <watch expression="Vlines" language="Python" />
       </configuration>
     </watches-manager>
   </component>
@@ -492,9 +489,54 @@
     <entry file="file://$PROJECT_DIR$/Obfusgate.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#28#37#0" expanded="true" />
+            <element signature="e#153#2527#0" expanded="false" />
+            <element signature="e#2715#2853#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c7552-abcmap-fmt.v">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="480" column="4" selection-start-line="480" selection-start-column="0" selection-end-line="480" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1777" column="0" selection-start-line="1777" selection-start-column="0" selection-end-line="1777" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/find_min_max.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Obfusgate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="85" column="46" selection-start-line="85" selection-start-column="46" selection-end-line="85" selection-end-column="46" />
           <folding>
             <element signature="e#28#37#0" expanded="true" />
+            <element signature="e#153#2527#0" expanded="false" />
             <element signature="e#2715#2853#0" expanded="false" />
           </folding>
         </state>
@@ -516,30 +558,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/c432-abcmap-fmt.v">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Obfusgate.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#28#37#0" expanded="true" />
+            <element signature="e#153#2527#0" expanded="false" />
             <element signature="e#2715#2853#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/c432-abcmap-fmt.v">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -547,22 +574,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/c432-abcmap-fmt-OBF-1.v">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/c432-abcmap-fmt.v">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="44" />
           <folding />
         </state>
       </provider>
@@ -577,7 +588,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/c7552-abcmap-fmt.v">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.612903">
+        <state vertical-scroll-proportion="0.0">
           <caret line="480" column="4" selection-start-line="480" selection-start-column="0" selection-end-line="480" selection-end-column="4" />
           <folding />
         </state>
@@ -594,17 +605,50 @@
     <entry file="file://$PROJECT_DIR$/c7552-abcmap-fmt-OBF-1.v">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="3933" column="18" selection-start-line="3933" selection-start-column="18" selection-end-line="3933" selection-end-column="18" />
+          <caret line="393" column="0" selection-start-line="393" selection-start-column="0" selection-end-line="393" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-10.v">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c432-abcmap-fmt-OBF-10.v">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c432-abcmap-fmt-OBF-1.v">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-2.v">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.0">
+          <caret line="188" column="32" selection-start-line="188" selection-start-column="32" selection-end-line="188" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Obfusgate.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7560484">
-          <caret line="30" column="127" selection-start-line="30" selection-start-column="127" selection-end-line="30" selection-end-column="127" />
+        <state vertical-scroll-proportion="-0.1843318">
+          <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
           <folding>
             <element signature="e#28#37#0" expanded="true" />
+            <element signature="e#153#2527#0" expanded="false" />
             <element signature="e#2715#2853#0" expanded="false" />
           </folding>
         </state>

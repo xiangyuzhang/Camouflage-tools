@@ -133,7 +133,7 @@ new_CB = []
 camouflage_counter = 0
 candidate_index_list = []   # index of the line if this line contain and2 or nand4, the index is corresponding to Vlines w/ only gates
 candidate_counter = 0   # used to count the number of and2 or nand4
-camouflage_counter = 0 # used to count the number of gate that has already been camouflaged
+camouflage_counter = 0  # used to count the number of gate that has already been camouflaged
 random_sequence = []
 
 
@@ -169,16 +169,16 @@ else:
         info = camouflage_builder(gate, seed, programbit)
         if "and2 " in gate:
 
-            new_netlist.append(("").join(info["new_netlist"]))
-            new_wires.append(("").join(info["wire"]))
-            new_CB.append(("").join(info["CB"]))
+            new_netlist.append((";\n").join(info["new_netlist"]))
+            new_wires.append((",").join(info["wire"]))
+            new_CB.append((",").join(info["CB"]))
             seed+=18
             programbit+=4
         elif "nand4 " in gate:
 
-            new_netlist.append(("").join(info["new_netlist"]))
-            new_wires.append(("").join(info["wire"]))
-            new_CB.append(("").join(info["CB"]))
+            new_netlist.append((";\n").join(info["new_netlist"]))
+            new_wires.append((",").join(info["wire"]))
+            new_CB.append((",").join(info["CB"]))
             seed+=45
             programbit+=10
         for index in range(0, len(Vlines)):
@@ -187,6 +187,13 @@ else:
                     old = "(" + output.strip("_OBF") + ")"
                     new = "(" + output + ")"
                     Vlines[index] = Vlines[index].replace(old, new)
+            output = info["output"][-1]
+            old_nobrace = output.strip("_OBF")
+            if old_nobrace in netname_finder(Vlines[index]):
+                old = "(" + output.strip("_OBF") + ")"
+                new = "(" + output + ")"
+                Vlines[index] = Vlines[index].replace(old, new)
+
 
 
     # modify wire
