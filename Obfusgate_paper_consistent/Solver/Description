@@ -1,7 +1,0 @@
-What: non-incremental solver with forbidden bits
-Usage: 
-	MUX2 
-	/decam-v5-cmmdline.v Orac.v Cam.v --forbid 11 -o Outfile
-	MUX4
-	/decam-v5-cmmdline.v Orac.v Cam.v -o Outfile
-Correctness: verified!

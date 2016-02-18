@@ -179,7 +179,7 @@ def NAND4_builder(net1, net2, net3, net4, output, seed, programbit):
         res["CB"].append(info[2])
         res["wire"].append(info[1])
         res["output"].append(info[3])
-        seed += 9
+        seed += 10
         programbit += 2
     info = abcmap_MUX_OBF_netlist(output + "_OBF", output, seed, programbit)
     res["new_netlist"].append(info[0])
@@ -258,12 +258,14 @@ else:
         new_netlist.append(info["new_netlist"])
         new_wires.append(info["wire"])
         new_CB.append(info["CB"])
-        seed += 45
+        seed += 50
         programbit += 10
 
         for index in range(0, len(Vlines)):
-            if gate in Vlines[index]:
-                Vlines[index] = ""
+             if gate in Vlines[index]:
+                 Vlines[index] = ""
+                 print ''
+
 
 
 
