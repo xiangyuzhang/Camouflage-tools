@@ -1,3 +1,4 @@
+#!/usr/bin/python
 __author__ = 'xiangyuzhang'
 import os
 import sys
@@ -5,6 +6,12 @@ import argparse
 import random
 import re
 
+def update_netname(netname_list, PI_list):
+    PI_index = 0
+    while len(netname_list) - 1 < 4:
+        netname_list.insert(2, PI_list[PI_index])
+        PI_index += 1
+    return netname_list
 
 def abcmap_MUX_OBF_netlist(pi1, output, seed, programbit):
     D_bit1 = 'D_' + str(programbit)
@@ -38,7 +45,7 @@ def abcmap_MUX_OBF_netlist(pi1, output, seed, programbit):
         "or2  gate( .a(" + "ED_" + str(seed + 6) + "), .b(" + "ED_" + str(seed + 7) + "), .O(" + "ED_" + str(
             seed + 8) + ") );\n")
     new_netlist.append(
-        "or2  gate( .a(" + "ED_" + str(seed + 9) + "), .b(" + "ED_" + str(seed + 8) + "), .O(" + str(output) + ")")
+        "or2  gate( .a(" + "ED_" + str(seed + 9) + "), .b(" + "ED_" + str(seed + 8) + "), .O(" + str(output) + ") )")
     new_netlist_str = ('').join(new_netlist)
     wire.append(D_bit1_not)
     wire.append(D_bit2_not)
@@ -125,7 +132,7 @@ def find_candidate(Vlines, candidate_counter):
     res = {"index_list": [], "candidate_counter": 0}
     candidate_index_list = []
     for index in range(0, len(Vlines)):
-        if int(re_find_gateType(Vlines[index])["input_number"][0]) <= 4:
+        if int(re_find_gateType(Vlines[index])["input_number"][0]) <= 4 and re_find_gateType(Vlines[index])["gate_type"][0] != "xor":
             candidate_counter += 1
             res["index_list"].append(index)
     res["candidate_counter"] = candidate_counter
@@ -138,7 +145,7 @@ def find_candidate(Vlines, candidate_counter):
 def random_sequence_generator(limit_num, select_range):
     random_counter = 0
     random.random()
-    random.seed(1)
+#    random.seed(1)
     random_sequence = []
     while random_counter < limit_num:
         temp = random.randint(0, select_range - 1)
@@ -195,12 +202,7 @@ def NAND4_builder(net1, net2, net3, net4, output, seed, programbit):
     return result
 
 
-def update_netname(netname_list, PI_list):
-    PI_index = 0
-    while len(netname_list) - 1 < 4:
-        netname_list.insert(2, PI_list[PI_index])
-        PI_index += 1
-    return netname_list
+
 
 
 #########################################################################################
