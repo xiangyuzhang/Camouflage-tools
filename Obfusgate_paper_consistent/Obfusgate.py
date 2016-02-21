@@ -132,7 +132,7 @@ def find_candidate(Vlines, candidate_counter):
     res = {"index_list": [], "candidate_counter": 0}
     candidate_index_list = []
     for index in range(0, len(Vlines)):
-        if int(re_find_gateType(Vlines[index])["input_number"][0]) <= 4 and re_find_gateType(Vlines[index])["gate_type"][0] != "xor":
+        if int(re_find_gateType(Vlines[index])["input_number"][0]) <= 4 and re_find_gateType(Vlines[index])["gate_type"][0] != "xor" and re_find_gateType(Vlines[index])["gate_type"][0] != "inv":
             candidate_counter += 1
             res["index_list"].append(index)
     res["candidate_counter"] = candidate_counter

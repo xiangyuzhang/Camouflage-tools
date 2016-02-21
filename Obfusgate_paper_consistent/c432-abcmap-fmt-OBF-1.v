@@ -26,11 +26,11 @@ wire N118,N119,N122,N123,N126,N127,N130,N131,N134,N135,
      N354,N355,N356,N357,N360,N371,N372,N373,N374,N375,
      N376,N377,N378,N379,N380,N381,N386,N393,N399,N404,
      N407,N411,N414,N415,N416,N417,N418,N419,N420,N422,
-     N425,N428,N429,D_0_NOT,D_1_NOT,N14_NOT,N14_OBF,ED_0,ED_1,ED_2,ED_3,ED_4,ED_5,ED_6,ED_7,ED_8,ED_9,
-D_2_NOT,D_3_NOT,N119_NOT,N119_OBF,ED_10,ED_11,ED_12,ED_13,ED_14,ED_15,ED_16,ED_17,ED_18,ED_19,
-D_4_NOT,D_5_NOT,N4_NOT,N4_OBF,ED_20,ED_21,ED_22,ED_23,ED_24,ED_25,ED_26,ED_27,ED_28,ED_29,
-D_6_NOT,D_7_NOT,N1_NOT,N1_OBF,ED_30,ED_31,ED_32,ED_33,ED_34,ED_35,ED_36,ED_37,ED_38,ED_39,
-D_8_NOT,D_9_NOT,N158_OBF_NOT,N158_OBF,ED_40,ED_41,ED_42,ED_43,ED_44,ED_45,ED_46,ED_47,ED_48,ED_49;
+     N425,N428,N429,D_0_NOT,D_1_NOT,N294_NOT,N294_OBF,ED_0,ED_1,ED_2,ED_3,ED_4,ED_5,ED_6,ED_7,ED_8,ED_9,
+D_2_NOT,D_3_NOT,N307_NOT,N307_OBF,ED_10,ED_11,ED_12,ED_13,ED_14,ED_15,ED_16,ED_17,ED_18,ED_19,
+D_4_NOT,D_5_NOT,N8_NOT,N8_OBF,ED_20,ED_21,ED_22,ED_23,ED_24,ED_25,ED_26,ED_27,ED_28,ED_29,
+D_6_NOT,D_7_NOT,N4_NOT,N4_OBF,ED_30,ED_31,ED_32,ED_33,ED_34,ED_35,ED_36,ED_37,ED_38,ED_39,
+D_8_NOT,D_9_NOT,N1_OBF_NOT,N1_OBF,ED_40,ED_41,ED_42,ED_43,ED_44,ED_45,ED_46,ED_47,ED_48,ED_49;
 
 
 inv1 gate1( .a(N1), .O(N118) );
@@ -53,7 +53,7 @@ inv1 gate17( .a(N102), .O(N150) );
 inv1 gate18( .a(N108), .O(N151) );
 nand2 gate19( .a(N118), .b(N4), .O(N154) );
 nor2 gate20( .a(N8), .b(N119), .O(N157) );
-;
+nor2 gate21( .a(N14), .b(N119), .O(N158) );
 nand2 gate22( .a(N122), .b(N17), .O(N159) );
 nand2 gate23( .a(N126), .b(N30), .O(N162) );
 nand2 gate24( .a(N130), .b(N43), .O(N165) );
@@ -126,7 +126,7 @@ inv1 gate90( .a(N290), .O(N303) );
 inv1 gate91( .a(N291), .O(N304) );
 inv1 gate92( .a(N292), .O(N305) );
 inv1 gate93( .a(N293), .O(N306) );
-inv1 gate94( .a(N294), .O(N307) );
+;
 inv1 gate95( .a(N295), .O(N308) );
 inv1 gate96( .a(N296), .O(N309) );
 inv1 gate97( .a(N296), .O(N319) );
@@ -195,9 +195,9 @@ nand4 gate159( .a(N381), .b(N386), .c(N425), .d(N428), .O(N431) );
 nand4 gate160( .a(N381), .b(N422), .c(N425), .d(N429), .O(N432) );
 inv1 gate( .a(D_0), .O(D_0_NOT) );
 inv1 gate( .a(D_1), .O(D_1_NOT) );
-inv1 gate( .a(N14), .O(N14_NOT) );
-and2 gate( .a(N14), .b(D_0_NOT), .O(ED_0) );
-and2 gate( .a(N14_NOT), .b(D_0_NOT), .O(ED_1) );
+inv1 gate( .a(N294), .O(N294_NOT) );
+and2 gate( .a(N294), .b(D_0_NOT), .O(ED_0) );
+and2 gate( .a(N294_NOT), .b(D_0_NOT), .O(ED_1) );
 and2 gate( .a(CONST1), .b(D_0), .O(ED_2) );
 and2 gate( .a(CONST0), .b(D_0), .O(ED_3) );
 and2 gate( .a(ED_0), .b(D_1_NOT), .O(ED_9) );
@@ -206,12 +206,12 @@ and2 gate( .a(ED_2), .b(D_1_NOT), .O(ED_5) );
 and2 gate( .a(ED_3), .b(D_1), .O(ED_4) );
 or2  gate( .a(ED_4), .b(ED_5), .O(ED_6) );
 or2  gate( .a(ED_6), .b(ED_7), .O(ED_8) );
-or2  gate( .a(ED_9), .b(ED_8), .O(N14_OBF);
+or2  gate( .a(ED_9), .b(ED_8), .O(N294_OBF) );
 inv1 gate( .a(D_2), .O(D_2_NOT) );
 inv1 gate( .a(D_3), .O(D_3_NOT) );
-inv1 gate( .a(N119), .O(N119_NOT) );
-and2 gate( .a(N119), .b(D_2_NOT), .O(ED_10) );
-and2 gate( .a(N119_NOT), .b(D_2_NOT), .O(ED_11) );
+inv1 gate( .a(N307), .O(N307_NOT) );
+and2 gate( .a(N307), .b(D_2_NOT), .O(ED_10) );
+and2 gate( .a(N307_NOT), .b(D_2_NOT), .O(ED_11) );
 and2 gate( .a(CONST1), .b(D_2), .O(ED_12) );
 and2 gate( .a(CONST0), .b(D_2), .O(ED_13) );
 and2 gate( .a(ED_10), .b(D_3_NOT), .O(ED_19) );
@@ -220,12 +220,12 @@ and2 gate( .a(ED_12), .b(D_3_NOT), .O(ED_15) );
 and2 gate( .a(ED_13), .b(D_3), .O(ED_14) );
 or2  gate( .a(ED_14), .b(ED_15), .O(ED_16) );
 or2  gate( .a(ED_16), .b(ED_17), .O(ED_18) );
-or2  gate( .a(ED_19), .b(ED_18), .O(N119_OBF);
+or2  gate( .a(ED_19), .b(ED_18), .O(N307_OBF) );
 inv1 gate( .a(D_4), .O(D_4_NOT) );
 inv1 gate( .a(D_5), .O(D_5_NOT) );
-inv1 gate( .a(N4), .O(N4_NOT) );
-and2 gate( .a(N4), .b(D_4_NOT), .O(ED_20) );
-and2 gate( .a(N4_NOT), .b(D_4_NOT), .O(ED_21) );
+inv1 gate( .a(N8), .O(N8_NOT) );
+and2 gate( .a(N8), .b(D_4_NOT), .O(ED_20) );
+and2 gate( .a(N8_NOT), .b(D_4_NOT), .O(ED_21) );
 and2 gate( .a(CONST1), .b(D_4), .O(ED_22) );
 and2 gate( .a(CONST0), .b(D_4), .O(ED_23) );
 and2 gate( .a(ED_20), .b(D_5_NOT), .O(ED_29) );
@@ -234,12 +234,12 @@ and2 gate( .a(ED_22), .b(D_5_NOT), .O(ED_25) );
 and2 gate( .a(ED_23), .b(D_5), .O(ED_24) );
 or2  gate( .a(ED_24), .b(ED_25), .O(ED_26) );
 or2  gate( .a(ED_26), .b(ED_27), .O(ED_28) );
-or2  gate( .a(ED_29), .b(ED_28), .O(N4_OBF);
+or2  gate( .a(ED_29), .b(ED_28), .O(N8_OBF) );
 inv1 gate( .a(D_6), .O(D_6_NOT) );
 inv1 gate( .a(D_7), .O(D_7_NOT) );
-inv1 gate( .a(N1), .O(N1_NOT) );
-and2 gate( .a(N1), .b(D_6_NOT), .O(ED_30) );
-and2 gate( .a(N1_NOT), .b(D_6_NOT), .O(ED_31) );
+inv1 gate( .a(N4), .O(N4_NOT) );
+and2 gate( .a(N4), .b(D_6_NOT), .O(ED_30) );
+and2 gate( .a(N4_NOT), .b(D_6_NOT), .O(ED_31) );
 and2 gate( .a(CONST1), .b(D_6), .O(ED_32) );
 and2 gate( .a(CONST0), .b(D_6), .O(ED_33) );
 and2 gate( .a(ED_30), .b(D_7_NOT), .O(ED_39) );
@@ -248,12 +248,12 @@ and2 gate( .a(ED_32), .b(D_7_NOT), .O(ED_35) );
 and2 gate( .a(ED_33), .b(D_7), .O(ED_34) );
 or2  gate( .a(ED_34), .b(ED_35), .O(ED_36) );
 or2  gate( .a(ED_36), .b(ED_37), .O(ED_38) );
-or2  gate( .a(ED_39), .b(ED_38), .O(N1_OBF);
+or2  gate( .a(ED_39), .b(ED_38), .O(N4_OBF) );
 inv1 gate( .a(D_8), .O(D_8_NOT) );
 inv1 gate( .a(D_9), .O(D_9_NOT) );
-inv1 gate( .a(N158_OBF), .O(N158_OBF_NOT) );
-and2 gate( .a(N158_OBF), .b(D_8_NOT), .O(ED_40) );
-and2 gate( .a(N158_OBF_NOT), .b(D_8_NOT), .O(ED_41) );
+inv1 gate( .a(N1_OBF), .O(N1_OBF_NOT) );
+and2 gate( .a(N1_OBF), .b(D_8_NOT), .O(ED_40) );
+and2 gate( .a(N1_OBF_NOT), .b(D_8_NOT), .O(ED_41) );
 and2 gate( .a(CONST1), .b(D_8), .O(ED_42) );
 and2 gate( .a(CONST0), .b(D_8), .O(ED_43) );
 and2 gate( .a(ED_40), .b(D_9_NOT), .O(ED_49) );
@@ -262,7 +262,7 @@ and2 gate( .a(ED_42), .b(D_9_NOT), .O(ED_45) );
 and2 gate( .a(ED_43), .b(D_9), .O(ED_44) );
 or2  gate( .a(ED_44), .b(ED_45), .O(ED_46) );
 or2  gate( .a(ED_46), .b(ED_47), .O(ED_48) );
-or2  gate( .a(ED_49), .b(ED_48), .O(N158);
-nand4 gate( .a(N14_OBF), .b(N119_OBF), .c(N4_OBF), .d(N1_OBF), .O(N158_OBF) );
+or2  gate( .a(ED_49), .b(ED_48), .O(N1) );
+nand4 gate( .a(N294_OBF), .b(N307_OBF), .c(N8_OBF), .d(N4_OBF), .O(N1_OBF) );
 
 endmodule
