@@ -9,7 +9,7 @@ import re
 def update_netname(netname_list, PI_list):
     PI_index = 0
     while len(netname_list) - 1 < 4:
-        netname_list.insert(2, PI_list[PI_index])
+        netname_list.insert(2, netname_list[PI_index])
         PI_index += 1
     return netname_list
 
@@ -132,7 +132,8 @@ def find_candidate(Vlines, candidate_counter):
     res = {"index_list": [], "candidate_counter": 0}
     candidate_index_list = []
     for index in range(0, len(Vlines)):
-        if int(re_find_gateType(Vlines[index])["input_number"][0]) <= 4 and re_find_gateType(Vlines[index])["gate_type"][0] != "xor" and re_find_gateType(Vlines[index])["gate_type"][0] != "inv":
+        if int(re_find_gateType(Vlines[index])["input_number"][0]) <= 4 and re_find_gateType(Vlines[index])["gate_type"][0] != "xor" and re_find_gateType(Vlines[index])["gate_type"][0] !="inv" and re_find_gateType(Vlines[index])["gate_type"][0] != "buf":
+#        if int(re_find_gateType(Vlines[index])["input_number"][0]) <= 4 and re_find_gateType(Vlines[index])["gate_type"][0] == "nand":
             candidate_counter += 1
             res["index_list"].append(index)
     res["candidate_counter"] = candidate_counter
@@ -253,6 +254,8 @@ else:
     for i in random_sequence:
         candidate_index = candidate_index_list[i]
         gate = gate_list[candidate_index]
+        with open("gate_selection", "a") as f:
+            f.write(gate + "\t")
         netname = netname_finder(gate)
         netname = update_netname(netname, PI_list)
 
