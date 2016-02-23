@@ -9,7 +9,7 @@ import re
 def update_netname(netname_list, PI_list):
     PI_index = 0
     while len(netname_list) - 1 < 4:
-        netname_list.insert(2, netname_list[PI_index])
+        netname_list.insert(0, PI_list[0])
         PI_index += 1
     return netname_list
 
@@ -132,8 +132,8 @@ def find_candidate(Vlines, candidate_counter):
     res = {"index_list": [], "candidate_counter": 0}
     candidate_index_list = []
     for index in range(0, len(Vlines)):
-        if int(re_find_gateType(Vlines[index])["input_number"][0]) <= 4 and re_find_gateType(Vlines[index])["gate_type"][0] != "xor" and re_find_gateType(Vlines[index])["gate_type"][0] !="inv" and re_find_gateType(Vlines[index])["gate_type"][0] != "buf":
-#        if int(re_find_gateType(Vlines[index])["input_number"][0]) <= 4 and re_find_gateType(Vlines[index])["gate_type"][0] == "nand":
+#        if int(re_find_gateType(Vlines[index])["input_number"][0]) <= 4 and re_find_gateType(Vlines[index])["gate_type"][0] != "xor" and re_find_gateType(Vlines[index])["gate_type"][0] !="inv" and re_find_gateType(Vlines[index])["gate_type"][0] != "buf":
+        if int(re_find_gateType(Vlines[index])["input_number"][0]) <= 4 and re_find_gateType(Vlines[index])["gate_type"][0] != "xor":
             candidate_counter += 1
             res["index_list"].append(index)
     res["candidate_counter"] = candidate_counter
@@ -175,20 +175,23 @@ def camouflage_builder(gate, seed, programbit):
     return res
 
 
-def NAND4_builder(net1, net2, net3, net4, output, seed, programbit):
+def NAND4_builder(net1, net2, net3, net4, output, seed, programbit, camouflaged_net_list):
     PIPO_list = [net1, net2, net3, net4]
 
     NAND4 = "nand4 gate( .a(" + net1 + "_OBF" + "), .b(" + net2 + "_OBF" + "), .c(" + net3 + "_OBF" + "), .d(" + net4 + "_OBF" + "), .O(" + output + "_OBF" + ") )"
     res = {"new_netlist": [], "CB": [], "wire": [], "output": []}
     result = {"new_netlist": '', "CB": '', "wire": '', "output": []}
     for net in PIPO_list:
-        info = abcmap_MUX_OBF_netlist(net, net + "_OBF", seed, programbit)
-        res["new_netlist"].append(info[0])
-        res["CB"].append(info[2])
-        res["wire"].append(info[1])
-        res["output"].append(info[3])
-        seed += 10
-        programbit += 2
+#        if net not in camouflaged_net_list:
+        if(1):
+            info = abcmap_MUX_OBF_netlist(net, net + "_OBF", seed, programbit)
+            res["new_netlist"].append(info[0])
+            res["CB"].append(info[2])
+            res["wire"].append(info[1])
+            res["output"].append(info[3])
+            seed += 10
+            programbit += 2
+            camouflaged_net_list.append(net)
     info = abcmap_MUX_OBF_netlist(output + "_OBF", output, seed, programbit)
     res["new_netlist"].append(info[0])
     res["CB"].append(info[2])
@@ -200,6 +203,7 @@ def NAND4_builder(net1, net2, net3, net4, output, seed, programbit):
     result["CB"] = ",".join(res["CB"])
     result["wire"] = ",\n".join(res["wire"])
     result["output"] = res["output"]
+    result["camouflaged_net_list"] = camouflaged_net_list
     return result
 
 
@@ -217,6 +221,7 @@ candidate_index_list = []  # index of the line if this line contain and2 or nand
 candidate_counter = 0  # used to count the number of and2 or nand4
 camouflage_counter = 0  # used to count the number of gate that has already been camouflaged
 random_sequence = []
+camouflaged_net_list = []
 
 parser = argparse.ArgumentParser(usage='python Obfusgate.py [-h]  <circuit.v> [number]]',
                                  description='This program will camouflage <circuit.v> with Obfusgate', )
@@ -259,7 +264,8 @@ else:
         netname = netname_finder(gate)
         netname = update_netname(netname, PI_list)
 
-        info = NAND4_builder(netname[0], netname[1], netname[2], netname[3], netname[4], seed, programbit)
+        info = NAND4_builder(netname[0], netname[1], netname[2], netname[3], netname[4], seed, programbit, camouflaged_net_list)
+        camouflaged_net_list = info["camouflaged_net_list"]
         new_netlist.append(info["new_netlist"])
         new_wires.append(info["wire"])
         new_CB.append(info["CB"])

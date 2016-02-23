@@ -27,7 +27,6 @@ and2 gate( .a(ED_3), .b(D_1), .O(ED_4) );
 or2  gate( .a(ED_4), .b(ED_5), .O(ED_6) );
 or2  gate( .a(ED_6), .b(ED_7), .O(ED_8) );
 or2  gate( .a(ED_9), .b(ED_8), .O(N1_OBF) );
-
 inv1 gate( .a(D_2), .O(D_2_NOT) );
 inv1 gate( .a(D_3), .O(D_3_NOT) );
 inv1 gate( .a(N2), .O(N2_NOT) );
@@ -42,7 +41,6 @@ and2 gate( .a(ED_13), .b(D_3), .O(ED_14) );
 or2  gate( .a(ED_14), .b(ED_15), .O(ED_16) );
 or2  gate( .a(ED_16), .b(ED_17), .O(ED_18) );
 or2  gate( .a(ED_19), .b(ED_18), .O(N2_OBF) );
-
 inv1 gate( .a(D_4), .O(D_4_NOT) );
 inv1 gate( .a(D_5), .O(D_5_NOT) );
 inv1 gate( .a(N3), .O(N3_NOT) );
@@ -57,7 +55,6 @@ and2 gate( .a(ED_23), .b(D_5), .O(ED_24) );
 or2  gate( .a(ED_24), .b(ED_25), .O(ED_26) );
 or2  gate( .a(ED_26), .b(ED_27), .O(ED_28) );
 or2  gate( .a(ED_29), .b(ED_28), .O(N3_OBF) );
-
 inv1 gate( .a(D_6), .O(D_6_NOT) );
 inv1 gate( .a(D_7), .O(D_7_NOT) );
 inv1 gate( .a(N4), .O(N4_NOT) );
@@ -72,7 +69,6 @@ and2 gate( .a(ED_33), .b(D_7), .O(ED_34) );
 or2  gate( .a(ED_34), .b(ED_35), .O(ED_36) );
 or2  gate( .a(ED_36), .b(ED_37), .O(ED_38) );
 or2  gate( .a(ED_39), .b(ED_38), .O(N4_OBF) );
-
 inv1 gate( .a(D_8), .O(D_8_NOT) );
 inv1 gate( .a(D_9), .O(D_9_NOT) );
 inv1 gate( .a(NO_OBF), .O(NO_OBF_NOT) );
@@ -87,7 +83,6 @@ and2 gate( .a(ED_43), .b(D_9), .O(ED_44) );
 or2  gate( .a(ED_44), .b(ED_45), .O(ED_46) );
 or2  gate( .a(ED_46), .b(ED_47), .O(ED_48) );
 or2  gate( .a(ED_49), .b(ED_48), .O(NO) );
-
 nand4 gate( .a(N1_OBF), .b(N2_OBF), .c(N3_OBF), .d(N4_OBF), .O(NO_OBF) );
 
 endmodule

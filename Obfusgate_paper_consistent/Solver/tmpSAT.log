@@ -2280,3 +2280,111 @@ Memory used           : 1.05 MB
 CPU time              : 0.009634 s
 
 SATISFIABLE
+============================[ Problem Statistics ]=============================
+|                                                                             |
+|  Number of variables:            95                                         |
+|  Number of clauses:             217                                         |
+|  Parse time:                   0.00 s                                       |
+|  Simplification time:          0.00 s                                       |
+|                                                                             |
+===============================================================================
+Solved by simplification
+restarts              : 0
+conflicts             : 0              (0 /sec)
+decisions             : 0              ( nan % random) (0 /sec)
+propagations          : 85             (69444 /sec)
+conflict literals     : 0              ( nan % deleted)
+Memory used           : 4.50 MB
+CPU time              : 0.001224 s
+
+UNSATISFIABLE
+============================[ Problem Statistics ]=============================
+|                                                                             |
+|  Number of variables:            42                                         |
+|  Number of clauses:              91                                         |
+|  Parse time:                   0.00 s                                       |
+|  Simplification time:          0.00 s                                       |
+|                                                                             |
+===============================================================================
+Solved by simplification
+restarts              : 0
+conflicts             : 0              (0 /sec)
+decisions             : 0              ( nan % random) (0 /sec)
+propagations          : 41             (43158 /sec)
+conflict literals     : 0              ( nan % deleted)
+Memory used           : 4.48 MB
+CPU time              : 0.00095 s
+
+UNSATISFIABLE
+============================[ Problem Statistics ]=============================
+|                                                                             |
+|  Number of variables:            42                                         |
+|  Number of clauses:              91                                         |
+|  Parse time:                   0.00 s                                       |
+|  Simplification time:          0.00 s                                       |
+|                                                                             |
+===============================================================================
+Solved by simplification
+restarts              : 0
+conflicts             : 0              (0 /sec)
+decisions             : 0              ( nan % random) (0 /sec)
+propagations          : 41             (44907 /sec)
+conflict literals     : 0              ( nan % deleted)
+Memory used           : 4.43 MB
+CPU time              : 0.000913 s
+
+UNSATISFIABLE
+============================[ Problem Statistics ]=============================
+|                                                                             |
+|  Number of variables:            90                                         |
+|  Number of clauses:             208                                         |
+|  Parse time:                   0.00 s                                       |
+|  Simplification time:          0.00 s                                       |
+|                                                                             |
+===============================================================================
+Solved by simplification
+restarts              : 0
+conflicts             : 0              (0 /sec)
+decisions             : 0              ( nan % random) (0 /sec)
+propagations          : 83             (86189 /sec)
+conflict literals     : 0              ( nan % deleted)
+Memory used           : 4.44 MB
+CPU time              : 0.000963 s
+
+UNSATISFIABLE
+============================[ Problem Statistics ]=============================
+|                                                                             |
+|  Number of variables:            90                                         |
+|  Number of clauses:             208                                         |
+|  Parse time:                   0.00 s                                       |
+|  Simplification time:          0.00 s                                       |
+|                                                                             |
+===============================================================================
+Solved by simplification
+restarts              : 0
+conflicts             : 0              (0 /sec)
+decisions             : 0              ( nan % random) (0 /sec)
+propagations          : 83             (74640 /sec)
+conflict literals     : 0              ( nan % deleted)
+Memory used           : 4.44 MB
+CPU time              : 0.001112 s
+
+UNSATISFIABLE
+============================[ Problem Statistics ]=============================
+|                                                                             |
+|  Number of variables:            96                                         |
+|  Number of clauses:             217                                         |
+|  Parse time:                   0.00 s                                       |
+|  Simplification time:          0.00 s                                       |
+|                                                                             |
+===============================================================================
+Solved by simplification
+restarts              : 0
+conflicts             : 0              (0 /sec)
+decisions             : 0              ( nan % random) (0 /sec)
+propagations          : 85             (72774 /sec)
+conflict literals     : 0              ( nan % deleted)
+Memory used           : 4.55 MB
+CPU time              : 0.001168 s
+
+UNSATISFIABLE
