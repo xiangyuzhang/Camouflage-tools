@@ -2,14 +2,133 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e84d347-746c-4d80-93c1-b47e3f6b975a" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NAND4" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/NAND4" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Solver/NAND4-OBF-1-1stMtr.cnf" afterPath="$PROJECT_DIR$/Solver/NAND4-OBF-1-1stMtr.cnf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Solver/NAND4-OBF-1-1stMtr.log" afterPath="$PROJECT_DIR$/Solver/NAND4-OBF-1-1stMtr.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NAND4-OBF-1.v" afterPath="$PROJECT_DIR$/NAND4-OBF-1.v" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Solver/NAND4-OBF-1.v" afterPath="$PROJECT_DIR$/Solver/NAND4-OBF-1.v" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-1-1stMtr.cnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-1-1stMtr.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-1-_findSolu.cnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-1-_findSolu.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-1-comp-cons.cnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-1-comp-cons.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-1.v" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-10-1stMtr.cnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-10-1stMtr.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-10-_findSolu.cnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-10-_findSolu.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-10-comp-cons.cnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-10-comp-cons.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-10.v" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-15-1stMtr.cnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-15-1stMtr.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-15-_findSolu.cnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-15-_findSolu.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-15-comp-cons.cnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-15-comp-cons.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-15.v" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-16-1stMtr.cnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-16-1stMtr.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-16-_findSolu.cnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-16-_findSolu.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-16-comp-cons.cnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-16-comp-cons.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-16.v" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-2-1stMtr.cnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-2-1stMtr.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-2-_findSolu.cnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-2-_findSolu.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-2-comp-cons.cnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-2-comp-cons.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-2.v" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-20-1stMtr.cnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-20-1stMtr.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-20-_findSolu.cnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-20-_findSolu.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-20-comp-cons.cnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-20-comp-cons.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-20.v" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-3-1stMtr.cnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-3-1stMtr.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-3-_findSolu.cnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-3-_findSolu.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-3-comp-cons.cnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-3-comp-cons.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-3.v" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-30-1stMtr.cnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-30-1stMtr.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-30-_findSolu.cnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-30-_findSolu.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-30-comp-cons.cnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-30-comp-cons.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-30.v" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-4-1stMtr.cnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-4-1stMtr.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-4-_findSolu.cnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-4-_findSolu.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-4-comp-cons.cnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-4-comp-cons.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-4.v" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-40-1stMtr.cnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-40-1stMtr.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-40-_findSolu.cnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-40-_findSolu.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-40-comp-cons.cnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-40-comp-cons.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-40.v" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-49-1stMtr.cnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-49-1stMtr.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-49-_findSolu.cnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-49-_findSolu.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-49-comp-cons.cnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-49-comp-cons.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-49.v" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-5-1stMtr.cnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-5-1stMtr.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-5-_findSolu.cnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-5-_findSolu.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-5-comp-cons.cnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-5-comp-cons.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-5.v" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-50-1stMtr.cnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-50-1stMtr.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-50-_findSolu.cnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-50-_findSolu.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-50-comp-cons.cnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-50-comp-cons.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-50.v" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-59.v" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-6-1stMtr.cnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-6-1stMtr.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-6-_findSolu.cnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-6-_findSolu.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-6-comp-cons.cnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-6-comp-cons.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-6.v" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-7-1stMtr.cnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-7-1stMtr.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-7-_findSolu.cnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-7-_findSolu.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-7-comp-cons.cnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-7-comp-cons.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-7.v" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-8-1stMtr.cnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-8-1stMtr.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-8-_findSolu.cnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-8-_findSolu.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-8-comp-cons.cnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-8-comp-cons.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-8.v" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-9-1stMtr.cnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-9-1stMtr.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-9-_findSolu.cnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-9-_findSolu.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-9-comp-cons.cnf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-9-comp-cons.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-9.v" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Obfusgate.py" afterPath="$PROJECT_DIR$/Obfusgate.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/c432-abcmap-fmt-OBF-30.v" afterPath="$PROJECT_DIR$/c432-abcmap-fmt-OBF-30.v" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/c432-abcmap-fmt-OBF-8.v" afterPath="$PROJECT_DIR$/c432-abcmap-fmt-OBF-8.v" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-wPI.cnf" afterPath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-wPI.cnf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-wPI.log" afterPath="$PROJECT_DIR$/Solver/c432-abcmap-fmt-wPI.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Solver/findSolution.log" afterPath="$PROJECT_DIR$/Solver/findSolution.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gate_selection" afterPath="$PROJECT_DIR$/gate_selection" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Solver/genNewPO.log" afterPath="$PROJECT_DIR$/Solver/genNewPO.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Solver/iniSatLog" afterPath="$PROJECT_DIR$/Solver/iniSatLog" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Solver/nonIncreIterationInfo.log" afterPath="$PROJECT_DIR$/Solver/nonIncreIterationInfo.log" />
@@ -35,44 +154,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Obfusgate.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Obfusgate.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Obfusgate.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.21924482">
-              <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-              <folding>
-                <element signature="e#46#55#0" expanded="true" />
-                <element signature="e#358#2824#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="decam-v5-cmmdline.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Solver/decam-v5-cmmdline.py">
-          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="263" column="0" selection-start-line="263" selection-start-column="0" selection-end-line="263" selection-end-column="0" />
+              <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Buf1.v" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Buf1.v">
+      <file leaf-file-name="c432-abcmap-fmt-OBF-8.v" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/c432-abcmap-fmt-OBF-8.v">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+              <caret line="9" column="273" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="273" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="inv1.v" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/inv1.v">
+      <file leaf-file-name="scratch.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Solver/scratch.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="9" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="9" />
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="c432-abcmap-fmt-OBF-2.v" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-2.v">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="277" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="344" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="c432-abcmap-fmt.v" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Solver/c432-abcmap-fmt.v">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.31059682">
+              <caret line="17" column="41" selection-start-line="0" selection-start-column="0" selection-end-line="193" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -107,7 +233,6 @@
         <option value="$PROJECT_DIR$/Solver/c17-abcmap-fmt-OBF-1.v" />
         <option value="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-1.v" />
         <option value="$PROJECT_DIR$/c432-abcmap-fmt-OBF-2.v" />
-        <option value="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-2.v" />
         <option value="$PROJECT_DIR$/c432-abcmap-fmt-OBF-1.v" />
         <option value="$PROJECT_DIR$/Solver/c7552-abcmap-fmt-OBF-6.v" />
         <option value="$PROJECT_DIR$/Solver/c499-abcmap-fmt-OBF-1.v" />
@@ -120,6 +245,9 @@
         <option value="$PROJECT_DIR$/inv1.v" />
         <option value="$PROJECT_DIR$/Buf1.v" />
         <option value="$PROJECT_DIR$/Obfusgate.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_1" />
+        <option value="$PROJECT_DIR$/Solver/scratch.py" />
+        <option value="$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-2.v" />
       </list>
     </option>
   </component>
@@ -188,14 +316,15 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="com.intellij.ide.scratch.NewScratchFileAction" value="TEXT" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -203,7 +332,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Obfusgate">
+  <component name="RunManager" selected="Python.scratch">
     <configuration default="false" name="Obfusgate" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -252,6 +381,23 @@
       <module name="Obfusgate_paper_consistent" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Solver/decam-v5-cmmdline.py" />
       <option name="PARAMETERS" value="NAND4.v NAND4-OBF-1.v" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="scratch" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Solver" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Obfusgate_paper_consistent" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Solver/scratch.py" />
+      <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
@@ -377,16 +523,18 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Python.Obfusgate" />
       <item index="1" class="java.lang.String" itemvalue="Python.find_min_max" />
       <item index="2" class="java.lang.String" itemvalue="Python.decam-v5-cmmdline" />
+      <item index="3" class="java.lang.String" itemvalue="Python.scratch" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python.Obfusgate" />
-        <item index="1" class="java.lang.String" itemvalue="Python.decam-v5-cmmdline" />
-        <item index="2" class="java.lang.String" itemvalue="Python.find_min_max" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Python.scratch" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Obfusgate" />
+        <item index="2" class="java.lang.String" itemvalue="Python.decam-v5-cmmdline" />
+        <item index="3" class="java.lang.String" itemvalue="Python.find_min_max" />
       </list>
     </recent_temporary>
   </component>
@@ -404,17 +552,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="1173" extended-state="0" />
+    <frame x="0" y="23" width="1920" height="1173" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21606648" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21606648" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20379147" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37119114" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2543444" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32779318" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -422,7 +568,9 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37950137" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32779318" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28480205" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
@@ -453,83 +601,35 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/Obfusgate.py</url>
-          <line>12</line>
+          <line>24</line>
           <option name="timeStamp" value="74" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/Obfusgate.py</url>
-          <line>11</line>
+          <line>23</line>
           <option name="timeStamp" value="75" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/Obfusgate.py</url>
-          <line>180</line>
+          <line>181</line>
           <option name="timeStamp" value="76" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/Solver/scratch.py</url>
+          <line>3</line>
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="77" />
+      <option name="time" value="78" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
         <watch expression="netname_list" language="Python" />
+        <watch expression="list" language="Python" />
       </configuration>
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Obfusgate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#46#55#0" expanded="true" />
-            <element signature="e#358#2824#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-15.v">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="50" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-16.v">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="505" column="46" selection-start-line="0" selection-start-column="0" selection-end-line="1408" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Obfusgate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="135" column="68" selection-start-line="135" selection-start-column="68" selection-end-line="135" selection-end-column="68" />
-          <folding>
-            <element signature="e#46#55#0" expanded="true" />
-            <element signature="e#358#2824#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-15.v">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="35" selection-start-line="0" selection-start-column="0" selection-end-line="1332" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-16.v">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/c432-abcmap-fmt-OBF-6.v">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -541,13 +641,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="911" column="46" selection-start-line="911" selection-start-column="46" selection-end-line="911" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-1.v">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -569,10 +662,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#46#55#0" expanded="true" />
-            <element signature="e#358#2824#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -608,10 +698,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#46#55#0" expanded="true" />
-            <element signature="e#358#2824#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -640,10 +727,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="e#46#55#0" expanded="true" />
-            <element signature="e#358#2824#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -658,10 +742,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#46#55#0" expanded="true" />
-            <element signature="e#358#2824#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -669,10 +750,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#46#55#0" expanded="true" />
-            <element signature="e#358#2824#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -694,10 +772,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="85" column="46" selection-start-line="85" selection-start-column="46" selection-end-line="85" selection-end-column="46" />
-          <folding>
-            <element signature="e#46#55#0" expanded="true" />
-            <element signature="e#358#2824#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -712,10 +787,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#46#55#0" expanded="true" />
-            <element signature="e#358#2824#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -747,13 +819,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Solver/c432-abcmap-fmt.v">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48387095">
-          <caret line="21" column="55" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/c432-abcmap-fmt-OBF-1.v">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -772,13 +837,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="209" column="30" selection-start-line="209" selection-start-column="30" selection-end-line="209" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-1.v">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -803,27 +861,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-16.v">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="505" column="46" selection-start-line="0" selection-start-column="0" selection-end-line="1408" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-15.v">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="50" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gate_selection">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -831,7 +872,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.21924482">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -839,7 +879,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="9" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -847,34 +886,74 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="9" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Buf1.v">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.21924482">
           <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Solver/decam-v5-cmmdline.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="2.1644337">
           <caret line="263" column="0" selection-start-line="263" selection-start-column="0" selection-end-line="263" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.018270401">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c432-abcmap-fmt-OBF-30.v">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.130435">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Obfusgate.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21924482">
-          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-          <folding>
-            <element signature="e#46#55#0" expanded="true" />
-            <element signature="e#358#2824#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c432-abcmap-fmt-OBF-8.v">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="273" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="273" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Solver/scratch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Solver/c432-abcmap-fmt-OBF-2.v">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="277" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="344" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Solver/c432-abcmap-fmt.v">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31059682">
+          <caret line="17" column="41" selection-start-line="0" selection-start-column="0" selection-end-line="193" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>

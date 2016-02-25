@@ -9,10 +9,22 @@ import re
 def update_netname(netname_list, PI_list):
     PI_index = 0
     while len(netname_list) - 1 < 4:
-        netname_list.insert(0, PI_list[0])
+        netname_list.insert(0, "CONST1")
         PI_index += 1
     return netname_list
 
+def random_sequence_generator(limit_num, select_range):
+    random_counter = 0
+    random.random()
+#    random.seed(1)
+    random_sequence = []
+    while random_counter < limit_num:
+        temp = random.randint(0, select_range - 1)
+        if temp not in random_sequence:
+            random_sequence.append(temp)
+            random_counter += 1
+
+    return random_sequence
 def abcmap_MUX_OBF_netlist(pi1, output, seed, programbit):
     D_bit1 = 'D_' + str(programbit)
     D_bit2 = 'D_' + str(programbit + 1)
@@ -143,18 +155,7 @@ def find_candidate(Vlines, candidate_counter):
 # return the index of the line if this line contain gate has less then 4 inputs, the index is corresponding to Vlines w/ only gates
 # info
 
-def random_sequence_generator(limit_num, select_range):
-    random_counter = 0
-    random.random()
-#    random.seed(1)
-    random_sequence = []
-    while random_counter < limit_num:
-        temp = random.randint(0, select_range - 1)
-        if temp not in random_sequence:
-            random_sequence.append(temp)
-            random_counter += 1
 
-    return random_sequence
 
 
 # limit_num is the length of random_sequence
@@ -254,7 +255,7 @@ if candidate_counter < Num_pair:
 else:
     # generate random sequence respect to the length of candidate_index_list
     random_sequence = random_sequence_generator(Num_pair, len(candidate_index_list))
-
+#    random_sequence.append(Num_pair)
     # build obfusgates
     for i in random_sequence:
         candidate_index = candidate_index_list[i]
@@ -281,7 +282,11 @@ else:
 
 
     # modify wire
-    new_wires_string = (",\n").join(new_wires)
+    new_wires_string = (",").join(new_wires).replace("CONST1_NOT,", "")
+    new_wires_list = new_wires_string.replace("\n", "").split(",")
+    new_wires_list2 = list(set(new_wires_list))
+    new_wires_list2.sort(key=new_wires_list.index)
+    new_wires_string = (",").join(new_wires_list2)
     for index in range(0, len(Vlines)):
         if "wire" in Vlines[index]:
             Vlines[index] = Vlines[index] + "," + new_wires_string
@@ -304,5 +309,6 @@ else:
 
     output = circuitIn.strip(".v") + "-OBF-" + str(Num_pair) + ".v"
     Final_result = (";\n").join(Vlines)
+    Final_result = Final_result.replace("CONST1_NOT", "CONST0")
     with open(output, 'w') as outfile:
         outfile.write(Final_result)
