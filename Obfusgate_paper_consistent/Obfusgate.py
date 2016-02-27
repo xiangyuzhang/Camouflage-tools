@@ -9,7 +9,7 @@ import re
 def update_netname(netname_list, PI_list):
     PI_index = 0
     while len(netname_list) - 1 < 4:
-        netname_list.insert(0, "CONST1")
+        netname_list.insert(0, netname_list[0])
         PI_index += 1
     return netname_list
 
@@ -30,7 +30,7 @@ def abcmap_MUX_OBF_netlist(pi1, output, seed, programbit):
     D_bit2 = 'D_' + str(programbit + 1)
     D_bit1_not = 'D_' + str(programbit) + "_NOT"
     D_bit2_not = 'D_' + str(programbit + 1) + "_NOT"
-    pi1_not = str(pi1) + "_NOT"
+    pi1_not = str(pi1) + "_NOT" + str(seed)
     new_netlist = []
     wire = []
     CB = []
@@ -176,27 +176,34 @@ def camouflage_builder(gate, seed, programbit):
     return res
 
 
-def NAND4_builder(net1, net2, net3, net4, output, seed, programbit, camouflaged_net_list):
+def NAND4_builder(net1, net2, net3, net4, output, seed, programbit, camouflaged_net_list, OBF_index):
     PIPO_list = [net1, net2, net3, net4]
-
-    NAND4 = "nand4 gate( .a(" + net1 + "_OBF" + "), .b(" + net2 + "_OBF" + "), .c(" + net3 + "_OBF" + "), .d(" + net4 + "_OBF" + "), .O(" + output + "_OBF" + ") )"
+    net1_OBF = net1 + "_OBF" + str(OBF_index + 1)
+    net2_OBF = net2 + "_OBF" + str(OBF_index + 2)
+    net3_OBF = net3 + "_OBF" + str(OBF_index + 3)
+    net4_OBF = net4 + "_OBF" + str(OBF_index + 4)
+    PIPO_list_OBF = [net1_OBF, net2_OBF, net3_OBF, net4_OBF]
+    NAND4 = "nand4 gate( .a(" + net1_OBF  + "), .b(" + net2_OBF + "), .c(" + net3_OBF  +  "), .d(" + net4_OBF  + "), .O(" + output + "_OBF" + str(OBF_index + 5) + ") )"
     res = {"new_netlist": [], "CB": [], "wire": [], "output": []}
+    OBF_index += 1
     result = {"new_netlist": '', "CB": '', "wire": '', "output": []}
     for net in PIPO_list:
+
 #        if net not in camouflaged_net_list:
         if(1):
-            info = abcmap_MUX_OBF_netlist(net, net + "_OBF", seed, programbit)
+            info = abcmap_MUX_OBF_netlist(net, net + "_OBF" + str(OBF_index), seed, programbit)
             res["new_netlist"].append(info[0])
             res["CB"].append(info[2])
             res["wire"].append(info[1])
             res["output"].append(info[3])
             seed += 10
             programbit += 2
+            OBF_index += 1
             camouflaged_net_list.append(net)
-    info = abcmap_MUX_OBF_netlist(output + "_OBF", output, seed, programbit)
+    info = abcmap_MUX_OBF_netlist(output + "_OBF" + str(OBF_index), output, seed, programbit)
     res["new_netlist"].append(info[0])
     res["CB"].append(info[2])
-    info[1] = info[1].replace("," + output + ",", "," + output + "_OBF" + ",")
+    info[1] = info[1].replace("," + output + ",", "," + output + "_OBF" + str(OBF_index) +",")
     res["wire"].append(info[1])
     res["output"].append(info[3])
     res["new_netlist"].append(NAND4)
@@ -214,6 +221,7 @@ def NAND4_builder(net1, net2, net3, net4, output, seed, programbit, camouflaged_
 #########################################################################################
 seed = 0
 programbit = 0
+OBF_index = 0
 new_netlist = []
 new_wires = []
 new_CB = []
@@ -265,14 +273,14 @@ else:
         netname = netname_finder(gate)
         netname = update_netname(netname, PI_list)
 
-        info = NAND4_builder(netname[0], netname[1], netname[2], netname[3], netname[4], seed, programbit, camouflaged_net_list)
+        info = NAND4_builder(netname[0], netname[1], netname[2], netname[3], netname[4], seed, programbit, camouflaged_net_list, OBF_index)
         camouflaged_net_list = info["camouflaged_net_list"]
         new_netlist.append(info["new_netlist"])
         new_wires.append(info["wire"])
         new_CB.append(info["CB"])
         seed += 50
         programbit += 10
-
+        OBF_index += 5
         for index in range(0, len(Vlines)):
              if gate in Vlines[index]:
                  Vlines[index] = ""
@@ -282,11 +290,11 @@ else:
 
 
     # modify wire
-    new_wires_string = (",").join(new_wires).replace("CONST1_NOT,", "")
-    new_wires_list = new_wires_string.replace("\n", "").split(",")
-    new_wires_list2 = list(set(new_wires_list))
-    new_wires_list2.sort(key=new_wires_list.index)
-    new_wires_string = (",").join(new_wires_list2)
+    new_wires_string = (",\n").join(new_wires).replace("CONST1_NOT,","")
+#    new_wires_list = new_wires_string.replace("\n", "").split(",")
+#    new_wires_list2 = list(set(new_wires_list))
+#    new_wires_list2.sort(key=new_wires_list.index)
+#    new_wires_string = (",").join(new_wires_list2)
     for index in range(0, len(Vlines)):
         if "wire" in Vlines[index]:
             Vlines[index] = Vlines[index] + "," + new_wires_string
