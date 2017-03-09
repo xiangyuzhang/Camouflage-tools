@@ -176,8 +176,8 @@ new_CB_string = (",").join(new_CB)
 for index in range(0, len(Vlines)):
     if "input" in Vlines[index]:
         Vlines[index] = input_modifier(Vlines[index])
-        Vlines[index] += " //RE__PI"
-        Vlines.insert(index + 1, "\ninput " + new_CB_string + " //RE__ALLOW(00,01,10,11)")
+        Vlines[index] += " ;//RE__PI"
+        Vlines.insert(index + 1, "\ninput " + new_CB_string + " ;//RE__ALLOW(00,01,10,11)")
         break
 # add new netlist
 Vlines = Vlines[0:-1]

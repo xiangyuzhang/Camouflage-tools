@@ -183,7 +183,7 @@ for input in new_CB:
     for i in input:
         input_base += i + ','
 input_base = input_base[:-1]
-input_base += " //RE__ALLOW(00,01,10,11)"
+input_base += " ;//RE__ALLOW(00,01,10,11)"
 
 for find in Vlines:
     if 'input' in find:
@@ -201,7 +201,7 @@ for MUX in new_netlist:
 for line in Vlines:
     if 'input' in line:
         if 'RE__' not in line:
-            Vlines[Vlines.index(line)] = Vlines[Vlines.index(line)] + ' //RE__PI'
+            Vlines[Vlines.index(line)] = Vlines[Vlines.index(line)] + ' ;//RE__PI'
             break
 # circuit generator
 out_circuit_name = circuitIn.strip('.v') + '-WIRE-' + str(Num_pair) + '.v'

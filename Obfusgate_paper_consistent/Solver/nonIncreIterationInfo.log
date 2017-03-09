@@ -1,25 +1,22 @@
 ============================[ Problem Statistics ]=============================
 |                                                                             |
-|  Number of variables:          3508                                         |
-|  Number of clauses:            9508                                         |
-|  Parse time:                   0.01 s                                       |
-|  Eliminated clauses:           0.05 Mb                                      |
-|  Simplification time:          0.01 s                                       |
+|  Number of variables:           512                                         |
+|  Number of clauses:            1288                                         |
+|  Parse time:                   0.00 s                                       |
+|  Eliminated clauses:           0.01 Mb                                      |
+|  Simplification time:          0.00 s                                       |
 |                                                                             |
 ============================[ Search Statistics ]==============================
 | Conflicts |          ORIGINAL         |          LEARNT          | Progress |
 |           |    Vars  Clauses Literals |    Limit  Clauses Lit/Cl |          |
 ===============================================================================
-|       100 |     232     1211     3778 |      444       92      8 | 57.241 % |
-|       250 |     232     1211     3778 |      488      242      8 | 57.241 % |
-|       475 |     214     1211     3778 |      537      465      8 | 57.754 % |
 ===============================================================================
-restarts              : 5
-conflicts             : 563            (25199 /sec)
-decisions             : 1809           (0.00 % random) (80969 /sec)
-propagations          : 20795          (930758 /sec)
-conflict literals     : 4486           (20.69 % deleted)
-Memory used           : 2.42 MB
-CPU time              : 0.022342 s
+restarts              : 1
+conflicts             : 4              (906 /sec)
+decisions             : 3              (0.00 % random) (679 /sec)
+propagations          : 145            (32835 /sec)
+conflict literals     : 4              (0.00 % deleted)
+Memory used           : 0.69 MB
+CPU time              : 0.004416 s
 
 UNSATISFIABLE
